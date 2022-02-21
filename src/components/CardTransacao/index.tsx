@@ -15,7 +15,7 @@ interface Category {
   icon: string;
 }
 
-export interface CardProps {
+export interface CardTransacaoProps {
   data: {
     type: "positive" | "negative";
     titulo: string;
@@ -25,7 +25,7 @@ export interface CardProps {
   };
 }
 
-export function CardTransacao({ data }: CardProps) {
+export function CardTransacao({ data }: CardTransacaoProps) {
   return (
     <Container>
       <Title>{data.titulo}</Title>

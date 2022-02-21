@@ -1,6 +1,9 @@
 import React from "react";
 import { CardDestaque } from "../../components/CardDestaque";
-import { CardTransacao, CardProps } from "../../components/CardTransacao";
+import {
+  CardTransacao,
+  CardTransacaoProps,
+} from "../../components/CardTransacao";
 import {
   Container,
   Header,
@@ -17,7 +20,7 @@ import {
   TransactionsList,
 } from "./styles";
 
-export interface DataListProps extends CardProps {
+export interface DataListProps extends CardTransacaoProps {
   id: string;
 }
 export function Dashboard() {
